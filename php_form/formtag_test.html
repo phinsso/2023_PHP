@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<br lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <style>
+      body {
+        background-color:deepskyblue;
+        width:fit-content;
+        height: max-content;
+        margin: auto;
+      }
+
+      h1 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      td {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: left;
+        padding: 10px 20px 10px 20px;
+      }
+
+      table {
+        background-color: aquamarine;
+        margin: auto;
+        padding: 30px 30px 50px 50px;
+      }
+
+      tr {
+        margin: auto;
+        padding: 50px 50px 50px 50px;
+      }
+
+      button {
+        width: auto;
+        margin: auto;
+      }
+
+      .btn {
+        text-align: center;
+      }
+
+      .btn_center {
+        display: inline-block;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form method="post" action="formtag_test.php">
+      <div id="background">
+        <h1>회원가입</h1>
+          <table>
+            <tr>
+              <td> 아이디 </td>
+              <td> <input type="text" name="user_id" maxlength="12"> <button type="double_check">중복확인</button> </td>
+            </tr>
+
+            <tr>
+              <td>비밀번호</td> 
+              <td><input type="text" name="user_password" maxlength="12"> * 비밀번호를 다시 입력 해주세요.</td> <br> 
+            </tr>
+
+            <tr>
+              <td>비밀번호 확인</td>
+              <td><input type="text" name="user_password_check" maxlength="15"></td>
+            </tr>
+
+            <tr>
+              <td>성명</td>
+              <td><input type="text" name="user_name" maxlength="12"></td>
+            </tr>
+
+            <tr>
+              <td>성별</td>
+              <td><input type="radio" name="user_gender" value="male">남자 <input type="radio" name="user_gender" value="female">여자</td>
+            </tr>
+
+            <tr>
+              <td>이메일</td>
+              <td><input type="text" name="user_email"/> @ <input type="text" name="user_email2"/>
+              <select name="email_choice">
+                <option value="직접입력">직접입력</option>
+                <option value="@naver.com">naver.com</option>
+                <option value="@gmail.com">gmail.com</option>
+                <option value="@kakao.com">kakao.com</option>
+                <option value="@daum.net">daum.net</option>
+                <option value="@hanmail.net">hanmail.net</option>
+                <option value="@korea.kr">korea.kr</option>
+                <option value="@e-mirim.hs.kr">e-mirim.hs.kr</option>
+              </select></td>
+            </tr>
+
+            <tr>
+              <td>주소</td>
+              <td><input type="text" name="user_address"/>
+              <button type="submit">주소찾기</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>상세주소</td>
+              <td><input type="text" name="user_detail_address"/></td>
+            </tr>
+
+            <tr>
+              <td rowspan="1">휴대폰</td>
+              <td>
+                <form>
+                  <input type="radio" name="user_telecom" value="SKT"> SKT
+                  <input type="radio" name="user_telecom" value="KT"> KT
+                  <input type="radio" name="user_telecom" value="LGU+"> LGU+ 
+                </form>
+                <br>
+                <select name="user_area_code">
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="02">02</option>
+                  <option value="031">031</option>
+                  <option value="032">032</option>
+                  <option value="033">033</option>
+                  <option value="041">041</option>
+                  <option value="042">042</option>
+                  <option value="043">043</option>
+                  <option value="044">044</option>
+                  <option value="051">051</option>
+                  <option value="052">052</option>
+                  <option value="053">053</option>
+                  <option value="054">054</option>
+                  <option value="055">055</option>
+                  <option value="061">061</option>
+                  <option value="062">062</option>
+                  <option value="063">063</option>
+                  <option value="064">064</option>
+                </select>
+                <input type="text" name="user_cellphone_middle" style="width:
+                88px" height="50px"/> - <input type="text" name="user_cellphone_last" style="width:
+                88px" height="50px"/>
+              </td>
+            </tr>
+
+            <tr>
+              <td>관심</td>
+              <td>
+                <form>
+                  <input type="checkbox" name="interest" value="수입차"> 수입차
+                  <input type="checkbox" name="interest" value="국산차"> 국산차 
+                  <input type="checkbox" name="interest" value="SUV"> SUV 
+                  <input type="checkbox" name="interest" value="경차"> 경차 
+                  <input type="checkbox" name="interest" value="LPG"> LPG
+                </form>
+              </td>
+            </tr>
+
+            <tr>
+              <td>자기소개</td>
+              <td><textarea name="txt" rows="10" cols="45"></textarea></td>
+            </tr>
+            
+          </table>
+          <div class="btn">
+            <button type="join" class="btn_center">가입하기</button>
+            <button type="again" class="btn_center">다시입력</button>
+          </div>
+        </div>
+      </form>
+  </body>
+</html>
