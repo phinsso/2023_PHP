@@ -1,0 +1,14 @@
+a:linkn {
+    text-decoration: none;
+    color: gray;
+}
+
+a:visitied {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
