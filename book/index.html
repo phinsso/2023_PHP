@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도서 등록</title>
+</head>
+<body>
+  <form method = "post" action= "insert.php">
+    제목: <input type="text" name="title" > <br>
+    저자: <input type="text" name="author" > <br>
+    가격: <input type="number" name="price" > <br>
+    출판사: <input type="text" name="publish" > <br>
+    장르: 
+    <select name="sel">
+        <option value="novel">소설</option>
+        <option value="essay">에세이</option>
+        <option value="philosophy">철학</option>
+        <option value="history">역사</option>
+    </select>
+    <br>
+    책 내용 개요: 
+    <textarea name="content"></textarea>
+    <br>
+    성별: <input type="radio" name="gender" value="1">남자
+    <input type="radio" name="gender" value="2">여자
+    <br>
+
+    <button type="submit" value="등록완료">등록완료</button>
+  </form>
+</body>
+</html>
