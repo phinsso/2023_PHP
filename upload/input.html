@@ -8,7 +8,8 @@
 <body>
     <form method="post" action="upload.php" enctype="multipart/form-data">
         <!-- enctype="multipart/form-data" <- 파일 업로드 시 꼭 넣어야 함!! -->
-        첨부파일<input type="file" name="userfile"><br/>
+        <!-- 첨부파일<input type="file" name="userfile"><br/> -->
+        첨부파일<input type="file" name="userfile[]" multiple>
         <button type="submit">업로드 완료</button>
     </form>
 </body>

@@ -1,0 +1,109 @@
+/* .product-detail-container {
+    max-width: 85%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-color: blue;
+    margin-top: 5%;
+}
+
+.product-detail-img {
+    flex: 1;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.product-detail-img img {
+    width: 90%;
+    height: 90%;
+}
+
+.product-detail-info {
+    flex: 1;
+    text-align: left;
+    background-color: chartreuse;
+} */
+
+.product-detail-container {
+    display: flex;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+    justify-content: space-between; /* 이미지와 정보를 가로로 정렬 */
+}
+
+.product-detail-img {
+    flex: 1; /* 이미지 영역을 1/2로 설정 */
+    text-align: center; /* 이미지를 가운데 정렬 */
+    background-color: #dc3545;
+}
+
+.product-detail-img img {
+    width: 100%; /* 이미지 크기 조절 */
+    height: 100%;
+}
+
+.product-detail-info {
+    flex: 1; /* 정보 영역을 1/2로 설정 */
+    padding-left: 15%;
+    padding-right: 5%;
+}
+
+.product-detail-info h4 {
+    font-size: 1.5em; /* 제품명 폰트 크기 조절 */
+}
+
+.product-detail-info p:not(.product-price) {
+    font-size: 0.8em;
+}
+
+.product-price {
+    font-size: 1.2em; /* 가격 폰트 크기 조절 */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc; /* 구분선 스타일 조절 */
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold; /* 라벨 텍스트 굵게 설정 */
+}
+
+select {
+    width: 100%; /* 선택 목록 전체 너비 사용 */
+    padding: 5px; /* 선택 목록 패딩 조절 */
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff; /* 버튼 배경색 설정 */
+    color: #fff; /* 버튼 글자색 설정 */
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+
+    margin-bottom: 2%;
+}
+
+.bottom-row {
+    display: flex;
+    flex: 5 1; /* 네이버페이로 구매하기 버튼이 5, 찜하기 버튼이 1의 비율을 가짐 */
+}

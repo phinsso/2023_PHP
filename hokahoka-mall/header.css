@@ -1,0 +1,39 @@
+header p {
+    text-align: center;
+    color: brown;
+    background-color: bisque;
+    padding: 0.5%;
+    margin-top: -0.5%;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    max-width: 85%;
+    margin: 0 auto;
+    display: flex; /* 가로로 배치 */
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li:not(:first-child) {
+    margin-left: 3em; /* 나머지 li 요소들의 왼쪽 간격 조정 */
+
+    margin-right: 3em; /* 간격 조정 (1em = 현재 폰트 크기의 0.5배) */
+    border: none; /* 외곽선 제거 */
+    text-decoration-line: none;
+    padding-top: 3em;
+}
+
+nav ul li:first-child a {
+    display: block;
+    width: 8em; /* 이미지 너비 조정 (원하는 크기로 수정) */
+    height: 8em; /* 이미지 높이 조정 (원하는 크기로 수정) */
+    padding-left: 10%;
+    margin-right: 3em;
+    background-image: url('./images/main-btn-img.png'); /* 이미지 경로 지정 */
+    background-size: cover;
+}
